@@ -1,0 +1,78 @@
+:root {
+    --dark: #E866ED;
+    --light: white;
+    --background-color: #33393E;
+    --border-radius: 5px;
+    --spacing: 10px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+header, body {
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    color: var(--dark);
+}
+
+p {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+#p1 {
+    color: var(--light);
+    text-align: center;
+
+}
+
+#p2 {
+    color: var(--light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cards_1, .cards_2, .cards_3 {
+    border: 2px dashed var(--light);
+    flex: 30%;
+    margin: var(--spacing);
+    background-image: linear-gradient(
+        rgba(121, 31, 124, 0.3) 0%,
+        rgba(232, 103, 236, 0.6) 100%
+    ) !important;
+}
+
+#parent_1 {
+    display: flex;
+}
+
+.card-header {
+    border: 2px solid var(--light);
+    border-radius: var(--border-radius);
+    position: relative;
+    margin-top: -20px;
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+}
+
+#c-header {
+    text-align: left;
+    padding-left: var(--spacing);
+}
+
+.card-box {
+    background-clip: border-box;
+    border-radius: var(--border-radius);
+  
+}
+
+#hint {
+    color: var(--light);
+    text-align: left;
+    margin-left: var(--spacing);
+    margin-bottom: -10px;
+}
